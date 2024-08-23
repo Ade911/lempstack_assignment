@@ -1,0 +1,31 @@
+# LEMPSTACK CONFIGURATION
+
+# update existing packages 
+sudo apt update
+
+#install nginx
+sudo apt install nginx
+
+#restart nginx server
+sudo systemctl reload nginx
+
+#check current nginx status
+sudo systemctl status nginx
+
+# check the current status of ufw
+sudo ufw status
+
+# enable ufw firewall service
+sudo ufw enable
+
+# check if nginx is installed
+sudo apt --installed | grep nginx
+
+# install MySQL
+sudo apt install mysql-server -y
+
+#install php and it's extensions
+sudo apt install php php-fpm php-mysql php-cli -y
+
+
+
